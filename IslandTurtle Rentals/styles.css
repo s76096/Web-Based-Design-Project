@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
+
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+body {
+    background-color: #2f98b8;
+    color: white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #dff9ff;
+    display: flex;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+.square-logo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('turtle.jpg');
+}
+
+.brand {
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.brand .island { color: #1e90ff; }
+.brand .turtle { color: #8b5a2b; }
+.brand .rentals { color: #4caf50; }
+
+.nav-links {
+    display: flex;
+    gap: 14px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 12px 22px;
+    background-color: #6fcf97;
+    color: white;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.nav-links a.active {
+    background-color: #1e90ff;
+}
+
+/* ===== MAIN SECTION ===== */
+.section {
+    width: 100%;
+    min-height: calc(100vh - 110px);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* ===== HOME ===== */
+.fleet {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    width: 320px;
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.card:hover {
+    background-color: #6fcf97;
+    transform: translateY(-10px);
+}
+
+.card:hover h3,
+.card:hover p {
+    color: white;
+}
+
+/* ===== CATEGORY CAR LIST (DO NOT REMOVE) ===== */
+.car-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+.car-row {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-row h3 {
+    font-size: 26px;
+}
+
+.car-row p {
+    font-size: 20px;
+}
+
+/* ===== BUTTONS ===== */
+.book-btn {
+    padding: 12px 24px;
+    font-size: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    width: auto;              /* IMPORTANT */
+    padding: 12px 26px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.book-btn:hover,
+.back-btn:hover,
+.search-btn:hover {
+    background-color: #166fc1;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* ===== ABOUT ===== */
+.about-text {
+    max-width: 900px;
+    margin: auto;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+}
+
+/* ===== CONTACT ===== */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact-form {
+    background-color: #6fcf97;
+    padding: 35px;
+    border-radius: 20px;
+    width: 420px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.contact-form textarea {
+    height: 140px;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 24px;
+    line-height: 2;
+}
+
+/* ===== STANDARD PAGE LAYOUT (BOOKING / FAQ / REVIEWS) ===== */
+.standard-section {
+    background-color: #2b98bd;
+    padding: 50px;
+    min-height: calc(100vh - 100px);
+    margin-bottom: 60px;
+}
+
+.standard-section h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 48px;
+}
+
+.standard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== BOOKING ===== */
+.booking-box {
+   max-width: 1100px;
+    margin: auto;
+    background-color: white;
+    padding: 45px;
+    border-radius: 15px;  /* same as car-row */
+    color: black;
+}
+
+.booking-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.booking-top span {
+    font-size: 18px;
+}
+
+.manage-btn {
+    padding: 10px 18px;
+    font-size: 18px;
+}
+
+.booking-grid {
+    gap: 30px;
+}
+
+.booking-grid input {
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.booking-grid input::placeholder {
+    color: white;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    .booking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .fleet {
+        flex-direction: column;
+    }
+
+    .car-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    background-color: #000; /* black background */
+    color: #fff; /* white text */
+    font-family: 'Teko', sans-serif;
+    font-size: 16px;
+    padding: 20px 20px 10px 20px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Flex layout for footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-container h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-container p, 
+.footer-container ul li a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 8px;
+}
+
+.footer-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    margin-top: 15px;
+}
+
+/* Make footer stick to bottom when page is short */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.section {
+    flex: 1; /* takes remaining space so footer stays at bottom */
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 800px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+.booking-grid select {
+  background-color: #5fd27b;
+  border: none;
+  padding: 12px;
+  font-family: 'Teko', sans-serif;
+  font-size: 16px;
+  color: white;
+  border-radius: 4px;
+}
+
+/* FIELD WRAPPER */
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LABEL STYLE */
+.field label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* INPUTS */
+.field input,
+.field select {
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-family: 'Teko', sans-serif;
+}
+
+/* FULL WIDTH FIELD */
+.field.full {
+  grid-column: span 2;
+}
+
+/* GRID IMPROVEMENT */
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* SEARCH BUTTON */
+.search-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 18px;
+  font-size: 22px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field.full {
+    grid-column: span 1;
+  }
+}
+
+.location-link {
+  color: #2e7d32;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.location-link:hover {
+  opacity: 0.8;
+}

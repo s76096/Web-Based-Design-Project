@@ -1,0 +1,193 @@
+/* Review form top */
+.review-form-top {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+
+.review-form-top h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.review-form-top input,
+.review-form-top textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Teko', sans-serif;
+}
+
+.review-form-top textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.review-form-top button {
+    margin-top: 20px;
+    padding: 14px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    font-family: 'Teko', sans-serif;
+    transition: background 0.3s;
+}
+
+.review-form-top button:hover {
+    background-color: #166fc1;
+}
+
+/* Star rating */
+.star-rating {
+    font-size: 36px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.star-rating span {
+    color: #555;
+    margin: 0 5px;
+    transition: color 0.2s;
+}
+
+.star-rating span:hover,
+.star-rating span:hover ~ span,
+.star-rating span.selected,
+.star-rating span.selected ~ span {
+    color: gold;
+}
+
+/* Reviews below form */
+.reviews-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-item {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.review-avatar {
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.review-content h4 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.review-stars {
+    font-size: 18px;
+    color: gold;
+}
+
+.review-content p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Reviews below form */
+.reviews-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-item {
+    display: flex;
+    background-color: #000; /* black background */
+    padding: 20px;
+    border-radius: 12px;
+    color: white; /* white text */
+}
+
+.review-avatar {
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.review-content h4 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.review-stars {
+    font-size: 18px;
+    color: gold;
+}
+
+.review-content p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: white; /* ensure review text is white */
+}
+
+/* Make reviews page full height so footer stays at bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
+}
+
+/* Make main section take remaining space */
+.section {
+    flex: 1;
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: #000; /* black */
+    color: #fff; /* white text */
+    padding: 20px 0;
+}
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
